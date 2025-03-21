@@ -56,6 +56,9 @@ php artisan key:generate
 # Migration de la base de données
 php artisan migrate
 
+# Génération du secret JWT  !!!
+php artisan jwt:secret
+
 # Démarrage du serveur
 php artisan serve
 ```
