@@ -1,10 +1,10 @@
 # 📅 TaskManager - Application de Gestion de Tâches
 
 <div align="center">
-  <img src="https://img.shields.io/badge/React-18-blue?logo=react" alt="React 18" />
-  <img src="https://img.shields.io/badge/Laravel-10-red?logo=laravel" alt="Laravel 10" />
-  <img src="https://img.shields.io/badge/Material--UI-5-blue?logo=mui" alt="Material-UI 5" />
-  <img src="https://img.shields.io/badge/MySQL-8-blue?logo=mysql" alt="MySQL 8" />
+  <img src="https://img.shields.io/badge/React-18-blue?logo=react" alt="React" />
+  <img src="https://img.shields.io/badge/Laravel-10-red?logo=laravel" alt="Laravel" />
+  <img src="https://img.shields.io/badge/Material--UI-5-blue?logo=mui" alt="Material-UI" />
+  <img src="https://img.shields.io/badge/MySQL-8-blue?logo=mysql" alt="MySQL" />
 </div>
 
 ## 🌟 Fonctionnalités
