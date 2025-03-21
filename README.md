@@ -111,21 +111,7 @@ REACT_APP_API_URL=http://localhost:8000
 - 🏠 **Page d'Accueil** - Interface moderne et accueillante
 - 📅 **Calendrier** - Vue claire et organisée des tâches
 - ✅ **Gestion des Tâches** - Interface intuitive de gestion
-- 👤 **Profil Utilisateur** - Gestion des informations personnelles
 
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! N'hésitez pas à :
-
-1. Fork le projet
-2. Créer une branche (`git checkout -b feature/AmazingFeature`)
-3. Commit vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Push sur la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrir une Pull Request
-
-## 📝 License
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 📧 Contact
 
