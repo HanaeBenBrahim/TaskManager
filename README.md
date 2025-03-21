@@ -3,8 +3,8 @@
 <div align="center">
   <img src="https://img.shields.io/badge/React-blue?logo=react" alt="React" />
   <img src="https://img.shields.io/badge/Laravel-red?logo=laravel" alt="Laravel" />
-  <img src="https://img.shields.io/badge/Material--UI-5-blue?logo=mui" alt="Material-UI" />
-  <img src="https://img.shields.io/badge/MySQL-8-blue?logo=mysql" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Material-UI-blue?logo=mui" alt="Material-UI" />
+  <img src="https://img.shields.io/badge/MySQL-blue?logo=mysql" alt="MySQL" />
 </div>
 
 ## 🌟 Fonctionnalités
