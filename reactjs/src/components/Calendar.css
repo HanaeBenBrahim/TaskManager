@@ -1,0 +1,127 @@
+.rbc-calendar {
+    background-color: #fff !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08) !important;
+    padding: 20px !important;
+}
+
+.rbc-header {
+    background-color: #f8f7ff !important;
+    color: #9254de !important;
+    padding: 10px !important;
+    font-weight: 500 !important;
+    border-bottom: none !important;
+    text-transform: capitalize !important;
+}
+
+.rbc-month-view {
+    border-radius: 12px !important;
+    border: none !important;
+    background-color: #fff !important;
+}
+
+.rbc-day-bg {
+    border-color: #f0f0f0 !important;
+}
+
+.rbc-today {
+    background-color: #f8f7ff !important;
+}
+
+.rbc-event {
+    min-height: 32px !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+    border: none !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
+    margin: 0 !important;
+    margin-bottom: 1px !important;
+    background-color: #f8f7ff !important;
+    color: #722ed1 !important;
+}
+
+.rbc-event-content {
+    padding: 0 !important;
+}
+
+.rbc-toolbar button {
+    color: #722ed1 !important;
+    border: 1px solid #f3eaff !important;
+}
+
+.rbc-toolbar button:hover,
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+    background-color: #f3eaff !important;
+    color: #722ed1 !important;
+}
+
+.rbc-toolbar-label {
+    color: #722ed1 !important;
+    font-size: 1.2em !important;
+    font-weight: 500 !important;
+}
+
+.rbc-off-range-bg {
+    background-color: #fafafa !important;
+}
+
+.rbc-date-cell {
+    padding: 5px !important;
+    font-size: 0.9em !important;
+    color: #666 !important;
+}
+
+/* Ajustements supplémentaires */
+.rbc-month-row {
+    border-color: #f0f0f0 !important;
+}
+
+.rbc-day-bg + .rbc-day-bg {
+    border-left: 1px solid #f0f0f0 !important;
+}
+
+.rbc-month-header {
+    margin-bottom: 10px !important;
+}
+
+.rbc-row-segment {
+    padding: 1px 2px !important;
+}
+
+/* Styles pour les différents états des tâches */
+.task-pending,
+.task-in_progress,
+.task-completed,
+.task-cancelled {
+    background-color: #f3e8ff !important;
+    border: none !important;
+    color: #531dab !important;
+}
+
+.task-title {
+    font-size: 0.8em !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    line-height: 1.2 !important;
+    color: inherit !important;
+}
+
+.task-time {
+    font-size: 0.65em !important;
+    opacity: 0.85 !important;
+    margin-top: 0px !important;
+    line-height: 1.2 !important;
+    color: inherit !important;
+}
+
+.task-status {
+    display: block !important;
+    font-size: 0.65em !important;
+    opacity: 0.85 !important;
+    line-height: 1.2 !important;
+    color: inherit !important;
+    font-weight: normal !important;
+} 
