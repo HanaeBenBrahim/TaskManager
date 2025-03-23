@@ -1,0 +1,193 @@
+.rbc-calendar {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.rbc-header {
+    padding: 8px;
+    font-weight: 500;
+    color: #64748b;
+    background-color: #f8fafc;
+    text-transform: capitalize;
+}
+
+.rbc-month-view {
+    border: 1px solid #e2e8f0;
+}
+
+.rbc-day-bg {
+    background-color: white;
+}
+
+.rbc-today {
+    background-color: #f0f9ff !important;
+}
+
+.rbc-off-range-bg {
+    background-color: #f8fafc;
+}
+
+.rbc-event {
+    min-height: 32px !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+    border: none !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
+    margin: 0 !important;
+    margin-bottom: 1px !important;
+    background-color: #f8f7ff !important;
+    color: #722ed1 !important;
+}
+
+.rbc-event-content {
+    padding: 0 !important;
+}
+
+.rbc-row-segment {
+    padding: 1px 2px !important;
+}
+
+/* Styles pour les différents états des tâches */
+.task-pending {
+    background-color: #f3e8ff !important;
+    border: none !important;
+    color: #531dab !important;
+}
+
+.task-in_progress {
+    background-color: #f3e8ff !important;
+    border: none !important;
+    color: #531dab !important;
+}
+
+.task-completed {
+    background-color: #f3e8ff !important;
+    border: none !important;
+    color: #531dab !important;
+}
+
+.task-cancelled {
+    background-color: #f3e8ff !important;
+    border: none !important;
+    color: #531dab !important;
+}
+
+.rbc-month-row {
+    min-height: 100px;
+}
+
+.rbc-toolbar button {
+    color: #64748b;
+    border: 1px solid #e2e8f0;
+    background-color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.rbc-toolbar button.rbc-active {
+    background-color: #3b82f6;
+    color: white;
+    border-color: #3b82f6;
+}
+
+.rbc-toolbar-label {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #1e293b;
+}
+
+.task-title {
+    font-size: 0.8em !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    line-height: 1.2 !important;
+    color: inherit !important;
+}
+
+.task-time {
+    font-size: 0.65em !important;
+    opacity: 0.85 !important;
+    margin-top: 0px !important;
+    line-height: 1.2 !important;
+    color: inherit !important;
+}
+
+.task-status {
+    display: block !important;
+    font-size: 0.65em !important;
+    opacity: 0.85 !important;
+    line-height: 1.2 !important;
+    color: inherit !important;
+    font-weight: normal !important;
+}
+
+.rbc-date-cell {
+    padding: 4px;
+    font-size: 0.9em;
+    color: #64748b;
+}
+
+.rbc-month-header {
+    margin-bottom: 10px !important;
+}
+
+.rbc-toolbar {
+    margin-bottom: 20px !important;
+}
+
+.rbc-toolbar button {
+    color: #722ed1 !important;
+    border: 1px solid #f3eaff !important;
+    background-color: white !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    font-weight: 500 !important;
+}
+
+.rbc-toolbar button:hover,
+.rbc-toolbar button.rbc-active {
+    background-color: #f3eaff !important;
+    color: #722ed1 !important;
+}
+
+.rbc-toolbar-label {
+    color: #722ed1 !important;
+    font-size: 1.2em !important;
+    font-weight: 500 !important;
+}
+
+.rbc-off-range {
+    background-color: #f1f5f9 !important;
+}
+
+.rbc-toolbar {
+    margin-bottom: 10px !important;
+}
+
+.rbc-toolbar button {
+    color: #64748b !important;
+    border: 1px solid #e2e8f0 !important;
+    background-color: white !important;
+    padding: 6px 12px !important;
+    border-radius: 6px !important;
+    font-size: 0.875rem !important;
+}
+
+.rbc-toolbar button:hover {
+    background-color: #f8fafc !important;
+}
+
+.rbc-toolbar button.rbc-active {
+    background-color: #3b82f6 !important;
+    color: white !important;
+    border-color: #3b82f6 !important;
+}
+
+.rbc-toolbar-label {
+    font-size: 1.125rem !important;
+    font-weight: 500 !important;
+    color: #1e293b !important;
+} 
