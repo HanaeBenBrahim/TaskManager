@@ -1,124 +1,100 @@
-# 📅 TaskManager - Application de Gestion de Tâches
+# TaskManager - Gestionnaire de Tâches
 
-<div align="center">
-  <img src="https://img.shields.io/badge/React-blue?logo=react" alt="React" />
-  <img src="https://img.shields.io/badge/Laravel-red?logo=laravel" alt="Laravel" />
-  <img src="https://img.shields.io/badge/Material-UI-blue?logo=mui" alt="Material-UI" />
-  <img src="https://img.shields.io/badge/MySQL-blue?logo=mysql" alt="MySQL" />
-</div>
+## Description
+TaskManager est une application web moderne de gestion de tâches développée avec Laravel et React. Elle offre une interface intuitive et des fonctionnalités avancées pour organiser efficacement vos activités.
 
-## 🌟 Fonctionnalités
+## Fonctionnalités
+- 🔐 Authentification sécurisée
+- 📅 Gestion de calendrier
+- ✅ Suivi des tâches
+- 👥 Gestion des utilisateurs
+- 📱 Interface responsive
 
-- **📊 Tableau de Bord Intuitif**
-  - Vue d'ensemble claire de vos tâches
-  - Statistiques et métriques importantes
+## Technologies Utilisées
+- Backend: Laravel
+- Frontend: React
+- Base de données: MySQL
+- API: RESTful
 
-- **📅 Calendrier Intelligent**
-  - Visualisation claire des tâches
-  - Gestion facile des événements
-  - Filtrage par statut et utilisateur
-
-- **👥 Gestion des Tâches**
-  - Création et assignation de tâches
-  - Suivi en temps réel
-  - Statuts personnalisables
-  - Collaboration d'équipe
-
-- **🔒 Authentification Sécurisée**
-  - Système de connexion robuste
-  - Gestion des rôles et permissions
-  - Protection des données
-
-## 🚀 Installation
+## Installation
 
 ### Prérequis
-
-- PHP >= 8.1
-- Node.js >= 16
-- MySQL >= 8.0
+- PHP >= 8.0
 - Composer
-- npm ou yarn
+- Node.js >= 14.0
+- MySQL
 
-### Backend (Laravel)
-
+### Configuration
+1. Cloner le repository
 ```bash
-# Installation des dépendances PHP
+git clone https://github.com/HanaeBenBrahim/TaskManager.git
+```
+
+2. Installer les dépendances
+```bash
+# Backend
 cd Laravel
 composer install
-
-# Configuration de l'environnement
 cp .env.example .env
 php artisan key:generate
 
-# Configuration de la base de données
-# Éditer le fichier .env avec vos informations de base de données
-
-# Migration de la base de données
-php artisan migrate
-
-# Génération du secret JWT  !!!
-php artisan jwt:secret
-
-# Démarrage du serveur
-php artisan serve
+# Frontend
+cd ../reactjs
+npm install
 ```
 
-### Frontend (React)
+3. Configurer la base de données
+- Créer une base de données MySQL
+- Modifier le fichier .env avec vos informations de connexion
 
+4. Lancer les migrations
 ```bash
-# Installation des dépendances JavaScript
-cd reactjs
-npm install
+cd Laravel
+php artisan migrate
+```
 
-# Démarrage de l'application
+5. Démarrer les serveurs
+```bash
+# Backend
+cd Laravel
+php artisan serve
+
+# Frontend
+cd reactjs
 npm start
 ```
 
-## 🎨 Technologies Utilisées
+## Mise à jour de l'interface 🎨
 
-### Backend
-- **Laravel** - Framework PHP moderne et robuste
-- **MySQL** - Base de données relationnelle
-- **Sanctum** - Authentification API sécurisée
+### Login & Register ✨
+- Design épuré en violet (#6846C1)
+- Réduction des marges pour un affichage plus compact
+- Traduction complète des textes en français
 
-### Frontend
-- **React** - Bibliothèque JavaScript performante
-- **Material-UI 5** - Framework UI moderne
-- **React Big Calendar** - Gestion avancée du calendrier
-- **Axios** - Client HTTP pour les requêtes API
+### Accueil 🏠
+- Deux fonctionnalités principales : Calendrier Intuitif & Gestion des Tâches
+- Design allégé avec boutons d'action clairs
 
-## 🔧 Configuration
+### Calendrier 📅
+- Interface entièrement en français
+- Suppression du filtre par statut, affichage optimisé
 
-### Variables d'Environnement
+### Navigation 🧭
+- Message de bienvenue personnalisé
+- Ajustement des espaces et des boutons
 
-#### Backend (.env)
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=taskmanager
-DB_USERNAME=root
-DB_PASSWORD=
-```
+✅ Résultat : Une interface plus fluide, moderne et intuitive !
 
-#### Frontend (.env)
-```env
-REACT_APP_API_URL=http://localhost:8000
-```
+## Contribution
+Les contributions sont les bienvenues ! N'hésitez pas à :
+1. Fork le projet
+2. Créer une branche pour votre fonctionnalité
+3. Commiter vos changements
+4. Pousser vers la branche
+5. Ouvrir une Pull Request
 
-## 📱 Captures d'écran
+## Licence
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
-- 🏠 **Page d'Accueil** - Interface moderne et accueillante
-- 📅 **Calendrier** - Vue claire et organisée des tâches
-- ✅ **Gestion des Tâches** - Interface intuitive de gestion
-
-
-## 📧 Contact
-
-Pour toute question ou suggestion, n'hésitez pas à nous contacter.
-
----
-
-<div align="center">
-  <p>Développé par Hanae✨ et Mohamed</p>
-</div> 
+## Contact
+Pour toute question ou suggestion, n'hésitez pas à ouvrir une issue ou à nous contacter directement. 
