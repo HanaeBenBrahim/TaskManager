@@ -65,14 +65,14 @@ npm start
 - Chaque environnement doit avoir sa propre clé unique
 - Les clés ne sont pas versionnées pour des raisons de sécurité
 
-## 🔄 Mises à Jour Prévues
+## 🔄 Mises à Jour 
 
-Améliorations en cours de développement :
++ ✅ Améliorations apportées :
 -  Nouvelle interface utilisateur moderne
 -  Page de profil utilisateur améliorée
 -  Style du backend 
 -  Système de filtrage des tâches 
--  Améliorations visuelles supplémentaires
+-  Améliorations visuelles supplémentaires ...
 
 ##  Captures d'Écran
 
