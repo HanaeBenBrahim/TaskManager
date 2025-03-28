@@ -76,14 +76,22 @@ Plusieurs améliorations sont en cours de développement :
 - [ ] Système de rappels par email
 - [ ] Export des tâches en PDF/Excel
 
-## 📸 Captures d'Écran
+## �� Captures d'Écran
 
-[ ici 5 captures d'écran de l'application]
-1. Page d'accueil
-2. Page de connexion
-3. Page d'inscription
-4. Tableau de bord
-5. Page de modification du profil
+### Page d'Accueil
+![Page d'Accueil](screenshots/home.png)
+
+### Page de Connexion
+![Page de Connexion](screenshots/login.png)
+
+### Page d'Inscription
+![Page d'Inscription](screenshots/register.png)
+
+### Tableau de Bord
+![Tableau de Bord](screenshots/dashboard.png)
+
+### Page de Profil
+![Page de Profil](screenshots/profile.png)
 
 ## 📞 Contact
 
