@@ -67,14 +67,12 @@ npm start
 
 ## 🔄 Mises à Jour Prévues
 
-Plusieurs améliorations sont en cours de développement :
-- [ ] Nouvelle interface utilisateur plus moderne
+Améliorations en cours de développement :
+- [x] Nouvelle interface utilisateur moderne
+- [x] Page de profil utilisateur améliorée
+- [x] Style du backend optimisé
 - [ ] Système de filtrage des tâches avancé
-- [ ] Intégration de statistiques et graphiques
-- [ ] Mode sombre
-- [ ] Support multilingue
-- [ ] Système de rappels par email
-- [ ] Export des tâches en PDF/Excel
+- [ ] Améliorations visuelles supplémentaires
 
 ## �� Captures d'Écran
 
