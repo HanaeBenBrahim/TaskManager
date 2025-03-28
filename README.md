@@ -28,6 +28,12 @@ Une application web moderne de gestion de tâches développée avec Laravel et R
 - CSS3 avec animations
 - Material-UI
 
+## 📌 Prérequis
+- PHP ≥ 8.0
+- Composer
+- MySQL
+- Node.js & npm
+
 ## 📦 Installation et Configuration
 
 1. **Cloner le repository**
@@ -58,21 +64,33 @@ npm start
 - Créer une base de données MySQL
 - Configurer les informations de connexion dans le fichier `.env` du backend
 
+### Exemple de configuration `.env`
+```DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=taskmanager
+DB_USERNAME=root
+DB_PASSWORD=
+
+JWT_SECRET=your_generated_secret
+```
+
 ## ⚠️ Note Importante sur JWT
 
-À chaque nouveau clonage du projet, il est nécessaire de générer une nouvelle clé JWT avec la commande `php artisan jwt:secret`. Cette étape est cruciale pour la sécurité de l'application car :
+À chaque nouveau clonage du projet, il est nécessaire de générer une nouvelle clé JWT avec la commande
+`php artisan jwt:secret`. 
+Cette étape est cruciale pour la sécurité de l'application car :
 - La clé JWT est utilisée pour signer les tokens d'authentification
 - Chaque environnement doit avoir sa propre clé unique
-- Les clés ne sont pas versionnées pour des raisons de sécurité
+- Les clés JWT ne sont pas incluses dans le versionnement pour garantir la sécurité.
 
 ## 🔄 Mises à Jour 
-
-+ ✅ Améliorations apportées :
+✅ Dernières améliorations :
 -  Nouvelle interface utilisateur moderne
 -  Page de profil utilisateur améliorée
--  Style du backend 
--  Système de filtrage des tâches 
--  Améliorations visuelles supplémentaires ...
+-  Ajout d’une page stylisée pour le backend
+-  Système de filtrage des tâches
+-  Diverses améliorations visuelles
 
 ##  Captures d'Écran
 
@@ -93,7 +111,7 @@ npm start
 
 ## 📞 Contact
 
-N'hésitez pas à me contacter pour toute question ou collaboration !
+N’hésitez pas à nous contacter pour toute question ou collaboration !
 
 ## 👥 Développeurs
 
