@@ -15,8 +15,8 @@ Une application web moderne de gestion de tâches développée avec Laravel et R
 ## 🛠 Technologies Utilisées
 
 ### Backend
-- Laravel 10
-- PHP 8.1+
+- Laravel
+- PHP
 - MySQL
 - JWT pour l'authentification
 - API RESTful
@@ -68,13 +68,13 @@ npm start
 ## 🔄 Mises à Jour Prévues
 
 Améliorations en cours de développement :
-- [x] Nouvelle interface utilisateur moderne
-- [x] Page de profil utilisateur améliorée
-- [x] Style du backend optimisé
-- [ ] Système de filtrage des tâches avancé
-- [ ] Améliorations visuelles supplémentaires
+-  Nouvelle interface utilisateur moderne
+-  Page de profil utilisateur améliorée
+-  Style du backend 
+-  Système de filtrage des tâches 
+-  Améliorations visuelles supplémentaires
 
-## �� Captures d'Écran
+##  Captures d'Écran
 
 ### Page d'Accueil
 ![Page d'Accueil](screenshots/home.png)
