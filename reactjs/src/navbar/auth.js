@@ -5,6 +5,9 @@ import AuthUser from '../components/AuthUser';
 import { AppBar, Toolbar, Button, Box, Container, Typography } from '@mui/material';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import LogoutIcon from '@mui/icons-material/Logout';
+import PersonIcon from '@mui/icons-material/Person';
+import Profile from '../components/Profile';
+import Login from '../components/login';
 
 function Auth() {
     const {token, logout, user} = AuthUser();
@@ -69,6 +72,21 @@ function Auth() {
                                 Dashboard
                             </Button>
                             <Button
+                                component={Link}
+                                to="/profile"
+                                startIcon={<PersonIcon />}
+                                sx={{
+                                    color: 'primary.main',
+                                    '&:hover': {
+                                        backgroundColor: 'rgba(33, 150, 243, 0.08)',
+                                    },
+                                    textTransform: 'none',
+                                    fontWeight: 500,
+                                }}
+                            >
+                                Mon Profil
+                            </Button>
+                            <Button
                                 onClick={logoutUser}
                                 startIcon={<LogoutIcon />}
                                 sx={{
@@ -91,6 +109,8 @@ function Auth() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/profile" element={<Profile />} />
+                    <Route path="/login" element={<Login />} />
                 </Routes>
             </Container>
         </>

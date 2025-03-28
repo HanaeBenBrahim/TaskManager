@@ -1,3 +1,5 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import AuthUser from './components/AuthUser';
 import Guest from './navbar/guest';
@@ -9,7 +11,9 @@ function App() {
     return <Guest />
   }
   return (
+    <div className="App">
       <Auth />
+    </div>
   );
 }
 

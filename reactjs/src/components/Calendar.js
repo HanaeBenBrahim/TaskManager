@@ -96,46 +96,53 @@ export default function TaskCalendar() {
     });
 
     useEffect(() => {
-        fetchEvents();
-        fetchUsers();
-    }, []);
+        let isMounted = true;
+
+        const fetchData = async () => {
+            try {
+                const [eventsResponse, usersResponse] = await Promise.all([
+                    http.get('/tasks'),
+                    http.get('/users')
+                ]);
+
+                if (isMounted) {
+                    const formattedEvents = eventsResponse.data.map(task => ({
+                        ...task,
+                        start: new Date(task.start_time),
+                        end: new Date(task.end_time)
+                    }));
+                    setEvents(formattedEvents);
+                    setUsers(usersResponse.data);
+                }
+            } catch (error) {
+                console.error('Erreur lors de la récupération des données:', error);
+            }
+        };
+
+        fetchData();
+
+        return () => {
+            isMounted = false;
+        };
+    }, [http]);
 
     useEffect(() => {
+        let isMounted = true;
+        
+        const filterEvents = () => {
+            let filtered = [...events];
+            
+            if (filters.user !== 'all') {
+                filtered = filtered.filter(event => event.assigned_to === filters.user);
+            }
+            
+            if (isMounted) {
+                setFilteredEvents(filtered);
+            }
+        };
+
         filterEvents();
     }, [events, filters]);
-
-    const filterEvents = () => {
-        let filtered = [...events];
-        
-        if (filters.user !== 'all') {
-            filtered = filtered.filter(event => event.assigned_to === filters.user);
-        }
-        
-        setFilteredEvents(filtered);
-    };
-
-    const fetchEvents = async () => {
-        try {
-            const response = await http.get('/tasks');
-            const formattedEvents = response.data.map(task => ({
-                ...task,
-                start: new Date(task.start_time),
-                end: new Date(task.end_time)
-            }));
-            setEvents(formattedEvents);
-        } catch (error) {
-            console.error('Erreur lors de la récupération des tâches:', error);
-        }
-    };
-
-    const fetchUsers = async () => {
-        try {
-            const response = await http.get('/users');
-            setUsers(response.data);
-        } catch (error) {
-            console.error('Erreur lors de la récupération des utilisateurs:', error);
-        }
-    };
 
     const handleSelectSlot = ({ start, end }) => {
         setNewEvent({
@@ -167,7 +174,13 @@ export default function TaskCalendar() {
             } else {
                 await http.post('/tasks', newEvent);
             }
-            fetchEvents();
+            const response = await http.get('/tasks');
+            const formattedEvents = response.data.map(task => ({
+                ...task,
+                start: new Date(task.start_time),
+                end: new Date(task.end_time)
+            }));
+            setEvents(formattedEvents);
             handleClose();
         } catch (error) {
             if (error.response?.data?.message) {
@@ -190,7 +203,13 @@ export default function TaskCalendar() {
         if (!selectedEvent) return;
         try {
             await http.delete(`/tasks/${selectedEvent.id}`);
-            fetchEvents();
+            const response = await http.get('/tasks');
+            const formattedEvents = response.data.map(task => ({
+                ...task,
+                start: new Date(task.start_time),
+                end: new Date(task.end_time)
+            }));
+            setEvents(formattedEvents);
             handleClose();
         } catch (error) {
             console.error('Erreur lors de la suppression:', error);

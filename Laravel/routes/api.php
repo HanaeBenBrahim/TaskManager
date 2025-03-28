@@ -35,4 +35,8 @@ Route::group(['middleware'=>'api'],function(){
 
     // Route pour les utilisateurs
     Route::get('users', [UserController::class, 'index']);
+
+    // Routes pour la gestion du profil
+    Route::get('/user', [UserController::class, 'show']);
+    Route::put('/user/update', [UserController::class, 'update']);
 });
